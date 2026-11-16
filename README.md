@@ -58,7 +58,7 @@ For branching operations, all potential branches and jumps are lumped into the f
 | JMP | 00 | `pc = pc + target` |
 | BZ | 01 | `if (zero) pc = pc + target` |
 | BNZ | 10 |  `if (!zero) pc = pc + target` |
-| BC | 10 | `if (carry) pc = pc + target` |
+| BC | 11 | `if (carry) pc = pc + target` |
 
 <br>
 
