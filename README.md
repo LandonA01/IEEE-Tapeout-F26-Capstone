@@ -3,7 +3,7 @@ IEEE Tapeout Fall 2026 Capstone – Landon, Vaishal, Ryan, Aryan
 
 ISA Overview 
 
-Instructions are written in 8 bits, grouped in a 4-register instruction module. Thus for PC-relative addressing, an immediate field of 1 byte is sufficient to move from one instruction to the subsequent instruction. Two bits are allocated for denoting instruction type. 
+Instructions are written in 8 bits, grouped in a 4-register instruction module. For jumps, absolute branching will be used over PC-relative addressing since there are only 4 instructions in instruction module. Simply setting the bits of the target address will reduce the area used on the chip. Two bits are allocated for denoting instruction type. 
 
 
 For register-register type operations, the arithmetic is applied on the inputs of source register and destination register and is entered as output into the destination register (Example: reg_dest = reg_dest (operation) reg_src). 
