@@ -1,5 +1,5 @@
 # IEEE-Tapeout-F26-Capstone
-IEEE Tapeout Fall 2026 Capstone – Landon, Vaishal, Ryan, Aryan
+IEEE Tapeout Fall 2026 Capstone – Landon, Vaishal, Ryan, Aryan, Phillip
 
 ## ISA Overview
 
