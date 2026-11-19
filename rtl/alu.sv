@@ -33,7 +33,7 @@ always_comb begin
       ALUCarryOut = 0;
     case (ALUOp)
         3'd0: {ALUCarryOut,ALUResult} = {1'b0, ALU_src1} + {1'b0, ALU_src2};
-        3'd1: {ALUCarryOut, ALUResult} = {1'b0, ALU_src1} + ~{1'b0, ALU_src2} + 9'd1; //A - B = A + (-B)
+        3'd1: {ALUCarryOut, ALUResult} = {1'b0, ALU_src1} + {1'b0, ~ALU_src2} + 9'd1; //A - B = A + (-B)
         3'd2: ALUResult = ALU_src1 | ALU_src2;
         3'd3: ALUResult = ALU_src1 ^ ALU_src2;
         3'd4: {ALUCarryOut, ALUResult} = {1'b0, ALU_src1} + {1'b0, ALU_src2} + Carry;
