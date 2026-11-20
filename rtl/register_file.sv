@@ -31,9 +31,10 @@ end
 //Read Logic
 
 always_comb begin
-    ALU_src1 = rf[dst_reg];
+    ALU_src1 = rf[rf_dst_reg];
     ALU_src2 = rf[src_reg];
 end
+
 
 
 

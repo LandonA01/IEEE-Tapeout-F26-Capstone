@@ -1,6 +1,5 @@
 module alu #(parameter DATA_WIDTH = 8)
 (
-    input logic ALUSrc, 
     input logic Carry, 
     input logic [2:0] ALUOp,
     input logic [DATA_WIDTH-1:0] ALU_src1, ALU_src2,

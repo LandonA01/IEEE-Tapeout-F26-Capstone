@@ -11,8 +11,6 @@ module imm_gen #(parameter DATA_WIDTH = 8,
 localparam int N = DATA_WIDTH - IMM_WIDTH;
 
 
-
-
 always_comb begin
     imm_ext = {{N{1'b0}}, imm};
 end
